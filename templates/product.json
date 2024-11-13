@@ -78,7 +78,7 @@
     "custom_liquid_HKWxLU": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h2>Locations</h2>\n{% assign product_location = product.metafields.custom.locations.value %}\n<ul>\n<li>First Location: {{ product_location[0].store_name }}</li>\n<li>Second Location: {{ product_location[1].store_name }}</li>\n<li>Third Location: {{ product_location[2].store_name }}</li>\n</ul>"
+        "custom_liquid": "<h2>Locations</h2>\n{% assign product_location = product.metafields.custom.locations.value %}\n<ul>\n<li>First Location: {{ product_location.store_name[0] }}</li>\n<li>Second Location: {{ product_location[1].store_name }}</li>\n<li>Third Location: {{ product_location[2].store_name }}</li>\n</ul>"
       }
     },
     "product-recommendations": {
